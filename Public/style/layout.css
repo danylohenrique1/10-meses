@@ -1,0 +1,50 @@
+:root {
+  --colorPrimary: #00cbee;
+  --colorAccent: #00ded8;
+  --colorDetails: #56edb4;
+  
+  --colorGrey: #f2f5f5;
+  --colorBackgroundDark: #1b1b1b;
+
+  --colorText: #565360;
+  --colorLabel: #988e9b;
+  --colorDisabled: #e1dfe9;
+
+  --lengthSm1: 0.25rem;
+  --LengthSm2: 0.375rem;
+  --LengthSm3: 0.5rem;
+  --lengthMd1: 1rem;
+  --LengthMd2: 1.25rem;
+  --LengthMd3: 1.5rem;
+  --lengthLg1: 2rem;
+  --LengthLg2: 3rem;
+  --LengthLg3: 4rem;
+
+  --heightTopbar: 6.25rem;
+}
+
+body {
+  background: var(--colorGrey) url(../src/undraw_love_is_in_the_air_re_3shu.svg)
+    no-repeat top 170px left;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Poppins', sans-serif;
+
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: var(--LengthLg3);
+  font-weight: 800;
+  line-height: 5.625rem;
+  text-align: center;
+  letter-spacing: 2%;
+}
+
+h2 {
+  font-size: var(--LengthMd3);
+  line-height: var(--lengthLg1);
+  font-weight: bold;
+  letter-spacing: 1%;
+  text-shadow: #fff;
+}

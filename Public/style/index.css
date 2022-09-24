@@ -1,0 +1,231 @@
+main {
+  height: 100vh;
+}
+
+/* ----------------------------------TOP BAR------------------------------- */
+
+#topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  position: fixed;
+  z-index: 100;
+  border-bottom: 1px solid #e4e4e4;
+
+  background-color: white;
+  width: 100vw;
+  height: var(--heightTopbar);
+
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+}
+
+#topbar.scroll {
+  box-shadow: 0px 0px 12px rgb(0 0 0 / 15%);
+}
+
+#topbar h2 {
+  color: var(--colorText);
+}
+
+#topbar nav {
+  display: flex;
+  gap: var(--lengthLg1);
+}
+
+#topbar nav a {
+  color: var(--colorText);
+}
+
+#topbar nav a:hover {
+  color: var(--colorPrimary);
+}
+
+section {
+  height: 100vh;
+  padding-top: calc(2rem + var(--heightTopbar));
+  padding-left: 1.25%;
+  padding-right: 1.25%;
+}
+
+/* -----------------------------------HOME------------------------------- */
+
+.home {
+  padding-left: 36vw;
+}
+
+.home h1 {
+  margin-bottom: var(--LengthMd3);
+  text-shadow: 0px 0px 10px rgb(0 0 0 / 15%);
+}
+
+.home p {
+  width: 100%;
+  text-align: center;
+}
+/* -----------------------------------BOM DIA------------------------------- */
+
+.bomDia {
+  background: var(--colorBackgroundDark);
+  color: var(--colorGrey);
+}
+
+.bomDia h1 {
+  color: var(--colorPrimary);
+}
+
+.bomDia .fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+}
+
+.bomDia img {
+  width: 500px;
+}
+
+.bomDia p {
+  width: 100%;
+}
+
+/* -----------------------------------MEU ORGULHO------------------------------- */
+
+#meuOrgulho {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#meuOrgulho .text {
+  text-align: center;
+  width: 50vw;
+}
+#meuOrgulho h1 {
+  transition: 1.5s;
+}
+#meuOrgulho h1:hover {
+  color: var(--colorAccent);
+}
+
+#meuOrgulho h5 {
+  margin-top: var(--LengthMd2);
+  margin-bottom: var(--LengthMd1);
+}
+
+#meuOrgulho img {
+  padding: 2rem;
+  border: 1px solid var(--colorPrimary);
+  border-radius: 8px;
+}
+
+#rainha header {
+  width: fit-content;
+  margin: 0 auto 1rem;
+  text-align: center;
+}
+
+/* -----------------------------------RAINHA DE TODOS OS BICHINHOS------------------------------- */
+
+#rainha header img {
+  width: 350px;
+}
+
+#rainha .cards {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  text-align: center;
+  justify-content: space-evenly;
+}
+
+#rainha .cards .card {
+  border: 1px solid #e4e4e4;
+  border-radius: 12px;
+
+  background-color: white;
+  width: 300px;
+  height: fit-content;
+
+  padding: 8px 12px;
+
+  transition: 0.4s;
+}
+
+#rainha .cards .card:hover {
+  transform: scale(102%);
+}
+
+#rainha .cards .card img {
+  height: 200px;
+  width: 90%;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+#rainha .cards .card p {
+  font-size: small;
+  color: var(--colorText);
+}
+
+/* -----------------------------------TE AMO------------------------------- */
+
+#teAmo h1 {
+  transition: 1.5s;
+}
+#teAmo h1:hover {
+  color: var(--colorAccent);
+}
+
+#teAmo .center {
+  text-align: center;
+  font-weight: bold;
+}
+
+#teAmo a {
+  display: flex;
+
+  width: fit-content;
+  margin: 16px auto;
+
+  background: var(--colorPrimary);
+  padding: 16px 24px;
+
+  border: 2px solid white;
+  border-radius: 20px;
+
+  cursor: pointer;
+
+  transition: 0.5s;
+}
+
+#teAmo a:hover {
+  color: rgb(60, 60, 60);
+  background: var(--colorAccent);
+  border-color: var(--colorPrimary);
+}
+
+/* -----------------------------------GIF CONFETES------------------------------- */
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block !important;
+  opacity: 100 !important;
+}
+.gif {
+  height: 70vh;
+  position: absolute;
+  z-index: 9999;
+}
+
+@media (max-width: 1280px) {
+  body {
+    background: var(--colorGrey)
+      url(../src/undraw_love_is_in_the_air_re_3shu.svg) no-repeat top 170px left -40px;
+  }
+
+  section {
+    height: 90vh;
+  }
+}
