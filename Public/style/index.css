@@ -25,6 +25,13 @@ main {
   box-shadow: 0px 0px 12px rgb(0 0 0 / 15%);
 }
 
+#topbar ul{
+  display: flex;
+  /* gap: var(--LengthMd1); */
+  gap: 1.2rem;
+}
+
+
 #topbar h2 {
   color: var(--colorText);
 }
@@ -118,13 +125,13 @@ section {
   border-radius: 8px;
 }
 
+
+/* -----------------------------------RAINHA DE TODOS OS BICHINHOS------------------------------- */
 #rainha header {
   width: fit-content;
   margin: 0 auto 1rem;
   text-align: center;
 }
-
-/* -----------------------------------RAINHA DE TODOS OS BICHINHOS------------------------------- */
 
 #rainha header img {
   width: 350px;
@@ -219,13 +226,4 @@ section {
   z-index: 9999;
 }
 
-@media (max-width: 1280px) {
-  body {
-    background: var(--colorGrey)
-      url(../src/undraw_love_is_in_the_air_re_3shu.svg) no-repeat top 170px left -40px;
-  }
 
-  section {
-    height: 90vh;
-  }
-}

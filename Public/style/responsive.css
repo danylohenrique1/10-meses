@@ -1,0 +1,130 @@
+@media (max-width: 450px) {
+  body{
+    max-width: 430px;
+    background: var(--colorGrey) url(../src/undraw_love_is_in_the_air_re_3shu.svg) no-repeat top 70px center/ 70% !important;
+  }
+
+  h1{
+    font-size: 27px;
+    line-height: 48px;
+    letter-spacing: -1%;
+  }
+  section {
+    height: fit-content;
+    min-height: 100vh;
+
+    padding-top: calc(.5rem + var(--heightTopbar));
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+
+
+  #topbar {
+    height: var(--LengthLg2);
+  }
+
+  #topbar nav ul{
+    display: none;
+  }
+
+  #topbar nav a.icone{
+    font-size: 20px;
+
+  }
+
+
+  #topbar nav.open{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+    left: 0;
+    top: 0;
+    background-color: white;
+  }
+
+
+
+  #topbar nav.open a.icone{
+    position: absolute;
+  top: 2%;
+    right: 5%;
+  }
+
+
+  #topbar nav.open ul{
+    display: flex;
+
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+    font-size: large;
+    padding: 0;
+    margin: 50% 0 0;
+  }
+
+  section.home {
+    padding-left: 0;
+    padding-top: 18rem;
+  }
+
+
+  .bomDia .fields {
+    grid-template-columns: auto;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .bomDia img {
+  width: 250px;
+  display: flex;
+  margin: 0 auto;
+
+  }
+
+  #meuOrgulho h1, #meuOrgulho h5, #meuOrgulho p{
+    width: 380px;
+    margin: 0 1rem;
+  }
+  #meuOrgulho h1{
+    margin: 0 0 25rem;
+  }
+
+  #meuOrgulho img{
+    margin: 6rem 1rem 0;
+    position: absolute;
+    width: 380px;
+  }
+
+  #rainha .cards {
+   flex-direction: column; 
+  }
+
+  #teAmo  {
+    padding-bottom: 1rem;
+  }
+
+  #teAmo h2 {
+    text-align: center;
+  }
+
+  .gif {
+    margin-top: 15rem;
+  }
+
+}
+
+/* min-width & max-width */
+@media (min-width: 451px) and (max-width: 1280px) {
+  body {
+    background: var(--colorGrey)
+      url(../src/undraw_love_is_in_the_air_re_3shu.svg) no-repeat top 170px left -40px;
+  }
+
+  section {
+    height: 90vh;
+  }
+}
+
